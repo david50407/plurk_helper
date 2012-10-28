@@ -1,0 +1,3 @@
+[submodule "plurkoauth"]
+	path = plurkoauth
+	url = git://github.com/clsung/plurkoauth.git
