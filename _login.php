@@ -1,5 +1,6 @@
 ﻿<?php
 define('HOST', 'http://' . $_SERVER['HTTP_HOST'] . '/plurk_helper');
+/* define('HOST', 'http://tcirc.org/~david50407/quarter.davy.twbbs.org/plurk_helper'); */
 define('ROOT', dirname(__FILE__));
 define('DS', DIRECTORY_SEPARATOR);
 
