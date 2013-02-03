@@ -1,0 +1,46 @@
+/* include reset stylesheet */
+@import compass/reset, compass/css3
+
+@mixin bar($side)
+  background-color: #CF682F
+  border-#{$side}: #973B0E 1px solid
+  color: white
+  font:
+    family: Arial,sans-serif
+    weight: bold
+  height: 1.6em
+  line-height: 1.6em
+  padding: 1px .5em
+
+#navi
+  +bar(bottom)
+  #go_plurk
+    float: right
+    text-decoration: none
+    color: white
+
+#footer
+  +bar(top)
+  #content
+    color: #FFD0AE
+    font-size: .85em
+
+#login_tip
+  margin: .5em
+  text-align: center
+  .button
+    background-color: #CF682F
+    +border-radius(2px)
+    border-top: 1px solid #F5A986
+    +box-shadow(0 0 0 1px #C54C29)
+    color: white
+    display: block
+    width: 200px
+    height: 5em
+    text-align: center
+    font:
+      family: Helvetica, Arial, sans-serif
+      weight: bold
+    vertical-align: middle
+    line-height: 5em
+    margin: 0 auto
