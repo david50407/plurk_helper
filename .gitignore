@@ -7,6 +7,8 @@ tmp/*
 *.rbc
 *.sassc
 .sass-cache
+session_store/*
+/session_store/*
 capybara-*.html
 .rspec
 /.bundle 

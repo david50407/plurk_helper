@@ -55,20 +55,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
 #navi {
   background-color: #cf682f;
   border-bottom: #973b0e 1px solid;
   color: white;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  height: 1.6em;
+  /* height: 1.6em */
   line-height: 1.6em;
+}
+#navi a {
+  text-decoration: none;
   padding: 1px 0.5em;
 }
 #navi #go_plurk {
-  float: right;
-  text-decoration: none;
   color: white;
+  float: right;
+  text-shadow: #6c2604 1px 1px 1px;
+}
+#navi .tab_bar {
+  font-size: 0.85em;
+}
+#navi .tab_bar a {
+  color: #4f1b02;
+  padding: 5px;
+  text-shadow: 0 1px 2px #f4ae8b;
+}
+
+#main {
+  padding: 0 0 1.6em;
 }
 
 #footer {
@@ -77,13 +106,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   color: white;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  height: 1.6em;
+  /* height: 1.6em */
   line-height: 1.6em;
-  padding: 1px 0.5em;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
 }
 #footer #content {
   color: #ffd0ae;
   font-size: 0.85em;
+  padding: 1px 0.5em;
 }
 
 #login_tip {
@@ -111,4 +143,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   vertical-align: middle;
   line-height: 5em;
   margin: 0 auto;
+  text-decoration: none;
 }

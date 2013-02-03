@@ -6,24 +6,50 @@
   border-#{$side}: #973B0E 1px solid
   color: white
   font:
-    family: Arial,sans-serif
+    family: Arial, sans-serif
     weight: bold
-  height: 1.6em
+  /* height: 1.6em */
   line-height: 1.6em
-  padding: 1px .5em
 
+html
+  height: 100%
+  min-height: 100%
+  
+body
+  height: 100%
+
+#container
+  min-height: 100%
+  position: relative
+  
 #navi
   +bar(bottom)
-  #go_plurk
-    float: right
+  a
     text-decoration: none
+    padding: 1px .5em
+  #go_plurk
     color: white
+    float: right
+    +text-shadow(#6C2604 1px 1px 1px)
+  .tab_bar
+    font-size: .85em
+    a
+      color: #4F1B02
+      padding: 5px
+      +text-shadow(0 1px 2px #F4AE8B)
+
+#main
+  padding: 0 0 1.6em
 
 #footer
   +bar(top)
+  bottom: 0
+  position: absolute
+  width: 100%
   #content
     color: #FFD0AE
     font-size: .85em
+    padding: 1px .5em
 
 #login_tip
   margin: .5em
@@ -44,3 +70,4 @@
     vertical-align: middle
     line-height: 5em
     margin: 0 auto
+    text-decoration: none
